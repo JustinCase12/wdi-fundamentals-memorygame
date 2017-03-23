@@ -1,16 +1,16 @@
 <!docutype html>
-<html>
+<html lang="en">
     <head>
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        
-        <script src="main.js"></script>
+        <meta name="keywords" content="one, two, three">
 </body>
         
         <title>Memory Game</title>
     </head>
     
     <body>
-       
+      <div id="container">
+       <script src="main.js"></script>
         <nav class="clearfix">
             <a href="#">Instructions</a>
             <a href="#">Game</a>
@@ -24,12 +24,16 @@
         
         <hr>
         
-            <div class="board">
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
+            <div class="board" id="game-board">
             </div>
-        <footer>Created with &hearts; by <span>GA</span></footer>
+            
+            <button class="button reset">Reset Game</button>
+            <input type="checkbox" class="button checkbox" name="cheat-mode" value="true">Cheat</input>
+            
+        <footer>Created with &hearts; by <span>Justin Castillo</span></footer>
+        
+        </div><!-- conatiner -->
+        
+        
     </body>
 </html>
